@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+  }
+
+.title {
+    font-size: 3em; 
+    color: crimson;
+}
+
+#principal {
+    font-size: 4.5em;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+p {
+    background-color: aliceblue;
+}
+
+p :hover {
+
+    background-color: red;
+    color: aqua;
+
+}
+
+p :focus {
+    color: blueviolet;
+}
+
+#titulos {
+    border: 2px solid black;
+    width: 60vw;
+    /*viewport width es un 65% de esa pantalla la que se esta trabajando o 60% uno le asigna lo que vale*/
+    margin: auto;
+    /*esto es el margen, se despega un poco, dificil es medir y se pone en automatico o auto (aqui se centra el div)*/
+    padding: 3cm;
+    /*es para centrar las palabras dentro del cuadro el padding*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*no me ha funcionado align-items IMPORTANTE*/
+   
+}
+
+.cards {
+    border: 2px solid black;
+    width: fit-content; /*fit content que tu contenido te fije este*/
+    padding: 1em 1em 2em 1em; /*esto sigue la logica de las agujas del reloj*/
+    border-radius: 15%; /*se redondean los bordes de las tarjetas*/
+    flex-direction: column;
+    gap: 2em; /*espacio pequeño que deberia haber entre la imagen y la letra*/
+    align-items: center; /*se centran todos los elementos*/
+    
+}
+
+.cards:hover  {
+    background-color: rgb(102, 7, 102);
+    transition: 1s; /*le das tiempo para que cambie de color*/
+}/*pseudoselector hover, es cuando pones el mouse y cambia el color cuando pones a este ensima de la imagen*/
+
+#cards-container {
+    
+    width: 85%;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid rgb(99, 50, 50);
+    border-radius: 5%;
+    padding: 2em;
+    display: flex; /*se van a poder expresar otros contenidos, es un contenedor de tipo flex que trabaja en 1 sela fila*/
+    flex-direction: row; /*se trabaja con el flex de la linea anterior de codigo, row en fila, column en columnas*/
+    justify-content: space-evenly; /*flex start es todos los elementos pegados al principio o  laizquierda, space arround esta en todas las distancias, space evently se posicionan automaticamente los elemntos*/
+    align-items: center;
+}
